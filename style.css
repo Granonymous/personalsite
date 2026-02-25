@@ -315,3 +315,36 @@ footer {
         margin-bottom: 0.5rem;
     }
 }
+
+/* --- Print Styles --- */
+@media print {
+    .navbar, footer {
+        display: none;
+    }
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    .resume-section {
+        padding: 0;
+        border: none;
+    }
+    .resume-container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .resume-header {
+        border-bottom: 2px solid #000;
+    }
+    .resume-block h2 {
+        border-bottom: 1px solid #000;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
