@@ -28,6 +28,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offsets sticky header height */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
@@ -49,10 +54,16 @@ h1, h2, h3, .logo {
 
 /* --- Navigation --- */
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 20px;
+    padding: 1.5rem 20px;
+    background-color: color-mix(in srgb, var(--bg-color), transparent 15%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -76,21 +87,50 @@ h1, h2, h3, .logo {
 }
 
 /* --- Hero Section --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
     padding: 6rem 0;
     border-bottom: 1px solid var(--border-color);
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
+    background: linear-gradient(120deg, var(--text-main), var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* Fallback */
 }
 
 .subtitle {
     font-size: 1.25rem;
     color: var(--text-muted);
     font-weight: 300;
+}
+
+.hero-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid var(--accent-color);
+    transition: opacity 0.2s;
+}
+
+.hero-links a:hover {
+    opacity: 0.7;
 }
 
 /* --- Main Sections --- */
@@ -117,12 +157,13 @@ h1, h2, h3, .logo {
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 8px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
 }
 
 .card h3 {
@@ -146,6 +187,24 @@ h1, h2, h3, .logo {
     font-size: 0.8rem;
     font-weight: 600;
     color: var(--accent-color);
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.project-link span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover span {
+    transform: translateX(4px);
 }
 
 /* --- Footer --- */
