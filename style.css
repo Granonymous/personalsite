@@ -352,6 +352,12 @@ h1, h2, h3, .logo {
     transition: transform 0.5s ease-in-out;
 }
 
+.adventure-slider .slide {
+    flex: 0 0 100%; /* Forces the slide to take up exactly 1 window width, no shrinking */
+    width: 100%;
+    height: 100%;
+}
+
 .adventure-slider .slide img {
     width: 100%;
     height: 100%;
@@ -359,13 +365,14 @@ h1, h2, h3, .logo {
     background-color: #1A202C; /* Adds a dark gallery backdrop for vertical photos */
     transition: transform 0.5s ease-in-out;
 }
+
 .adventure-slider .slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; 
     object-position: center;
+    background-color: #1A202C; 
     transition: transform 0.5s ease-in-out;
-    background-color: #1A202C;
 }
 
 .adventure-slider:hover .slide img {
