@@ -214,9 +214,6 @@
         <section id="about" class="section">
             <h2>About</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/pics/KayakHeadshot.png" alt="Grady Cole headshot">
-                </div>
                 <div class="about-text">
                     <p>I'm currently a student at Yale University pursuing a BS in Environmental Studies with a focus on Energy & Climate, complemented by a certificate in Statistics & Data Science. My work bridges the gap between environmental research and data-driven storytelling.</p>
                     <p>When I'm not working on geospatial analyses or writing about sustainability, you'll find me planning outdoor adventures—whether it's backpacking, kayaking, or preparing for my next expedition. My experiences range from co-founding a mushroom business to participating in the National Outdoor Leadership School's wilderness programs.</p>
@@ -232,5 +229,74 @@
         </div>
     </footer>
 
+    <script>
+        // Adventure Slider Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliders = document.querySelectorAll('.adventure-slider');
+
+            sliders.forEach(slider => {
+                const track = slider.querySelector('.slider-track');
+                const slides = slider.querySelectorAll('.slide');
+                const prevBtn = slider.querySelector('.prev-btn');
+                const nextBtn = slider.querySelector('.next-btn');
+                const indicator = slider.querySelector('.slide-indicator');
+
+                let currentIndex = 0;
+                const totalSlides = slides.length;
+                const slideWidth = 100; // Percentage
+
+                // Update slide position
+                function updateSlide() {
+                    const offset = -currentIndex * 100;
+                    track.style.transform = `translateX(${offset}%)`;
+                    indicator.textContent = `${currentIndex + 1} / ${totalSlides}`;
+                }
+
+                // Auto-rotate
+                let autoRotate = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateSlide();
+                }, 5000); // Change slide every 5 seconds
+
+                // Pause on hover
+                slider.addEventListener('mouseenter', () => {
+                    clearInterval(autoRotate);
+                });
+
+                slider.addEventListener('mouseleave', () => {
+                    autoRotate = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % totalSlides;
+                        updateSlide();
+                    }, 5000);
+                });
+
+                // Previous button
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                        updateSlide();
+                        clearInterval(autoRotate);
+                        autoRotate = setInterval(() => {
+                            currentIndex = (currentIndex + 1) % totalSlides;
+                            updateSlide();
+                        }, 5000);
+                    });
+                }
+
+                // Next button
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        currentIndex = (currentIndex + 1) % totalSlides;
+                        updateSlide();
+                        clearInterval(autoRotate);
+                        autoRotate = setInterval(() => {
+                            currentIndex = (currentIndex + 1) % totalSlides;
+                            updateSlide();
+                        }, 5000);
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
