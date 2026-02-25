@@ -357,6 +357,7 @@ h1, h2, h3, .logo {
     flex-shrink: 0;  /* Strictly forbids Flexbox from squishing it */
     height: 100%;
 }
+
 .adventure-slider .slide img {
     width: 100%;
     height: 100%;
@@ -365,7 +366,6 @@ h1, h2, h3, .logo {
     background-color: #1A202C; 
     transition: transform 0.5s ease-in-out;
 }
-
 
 .adventure-slider:hover .slide img {
     transform: scale(1.02);
