@@ -341,7 +341,8 @@ h1, h2, h3, .logo {
 .adventure-slider .slider-viewport {
     position: relative;
     width: 100%;
-    height: 400px;
+    min-height: 350px;
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -353,25 +354,22 @@ h1, h2, h3, .logo {
 }
 
 .adventure-slider .slide {
-    min-width: 100%; 
-    flex-shrink: 0;  
+    min-width: 100%;
+    flex-shrink: 0;
     height: 100%;
-    /* --- The Gallery Wall Fix --- */
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-color); /* Adapts perfectly to your Light/Dark mode */
-    padding: 1.5rem; /* Gives the photo breathing room */
+    background-color: var(--bg-color);
+    padding: 2rem 1.5rem;
 }
 
 .adventure-slider .slide img {
-    max-width: 100%;
-    max-height: 100%;
-    /* --- The Framed Art Fix --- */
-    width: auto; /* Lets portrait images take their natural width */
-    height: auto; 
-    border-radius: 4px; 
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* Adds a professional drop shadow */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     transition: transform 0.5s ease-in-out;
 }
 
@@ -815,7 +813,8 @@ footer {
     }
 
     .adventure-slider .slider-viewport {
-        height: 200px;
+        min-height: 280px;
+        max-height: 350px;
     }
 
     .adventure-slider .slider-header {
