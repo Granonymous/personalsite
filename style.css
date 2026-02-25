@@ -214,3 +214,104 @@ footer {
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+/* --- Digital Resume Styling --- */
+.resume-section {
+    background-color: var(--bg-color);
+    padding: 4rem 20px;
+}
+
+.resume-container {
+    max-width: 850px; /* Standard letter proportion */
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 4rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid var(--text-main);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.resume-header p {
+    color: var(--text-muted);
+}
+
+.resume-block {
+    margin-bottom: 2.5rem;
+}
+
+.resume-block h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resume-item {
+    margin-bottom: 1.5rem;
+}
+
+.resume-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.25rem;
+}
+
+.resume-item-header h3 {
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif; /* Keeping it clean, not serif here */
+    font-weight: 600;
+}
+
+.resume-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-align: right;
+}
+
+.resume-item p {
+    margin-bottom: 0.5rem;
+}
+
+.resume-item ul, .skills-list {
+    margin-left: 1.25rem;
+    color: var(--text-muted);
+}
+
+.resume-item li, .skills-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* Make it responsive for mobile phones */
+@media (max-width: 600px) {
+    .resume-container {
+        padding: 2rem;
+    }
+    
+    .resume-item-header {
+        flex-direction: column;
+    }
+    
+    .resume-meta {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+}
