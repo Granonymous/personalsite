@@ -28,6 +28,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px; /* Offsets sticky header height */
@@ -354,9 +360,10 @@ h1, h2, h3, .logo {
 .adventure-slider .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     transition: transform 0.5s ease-in-out;
+    background-color: #1A202C;
 }
 
 .adventure-slider:hover .slide img {
