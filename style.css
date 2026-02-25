@@ -353,19 +353,10 @@ h1, h2, h3, .logo {
 }
 
 .adventure-slider .slide {
-    flex: 0 0 100%; /* Forces the slide to take up exactly 1 window width, no shrinking */
-    width: 100%;
+    min-width: 100%; /* Forces it to take up the whole window */
+    flex-shrink: 0;  /* Strictly forbids Flexbox from squishing it */
     height: 100%;
 }
-
-.adventure-slider .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Changed from cover */
-    background-color: #1A202C; /* Adds a dark gallery backdrop for vertical photos */
-    transition: transform 0.5s ease-in-out;
-}
-
 .adventure-slider .slide img {
     width: 100%;
     height: 100%;
@@ -374,6 +365,7 @@ h1, h2, h3, .logo {
     background-color: #1A202C; 
     transition: transform 0.5s ease-in-out;
 }
+
 
 .adventure-slider:hover .slide img {
     transform: scale(1.02);
