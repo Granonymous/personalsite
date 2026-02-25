@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grady Cole | Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,117 +20,179 @@
     </nav>
 
     <main class="container">
-            <section class="section resume-section">
-    <div class="resume-container">
-        
-        <div class="resume-header">
-            <h1>GRADY COLE</h1>
-            <p>New Haven, Connecticut | (410) 562-4224 | grady.cole@yale.edu</p>
-        </div>
+        <section class="section resume-section">
+            <div class="resume-container">
 
-        <div class="resume-block">
-            <h2>EDUCATION</h2>
-            
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Yale University</h3>
-                    <span class="resume-meta">New Haven, CT | Expected December 2027</span>
+                <!-- Header Section -->
+                <div class="resume-header">
+                    <h1>GRADY COLE</h1>
+                    <div class="contact-info">
+                        <span>New Haven, CT</span>
+                        <span class="bullet">&bull;</span>
+                        <span>(410) 562-4224</span>
+                        <span class="bullet">&bull;</span>
+                        <a href="mailto:grady.cole@yale.edu">grady.cole@yale.edu</a>
+                    </div>
                 </div>
-                <p><strong>BS in Environmental Studies (Energy & Climate); Certificate in Statistics & Data Science</strong></p>
-                <ul>
-                    <li>Relevant Coursework: Introductory statistics, CS50x, Computing & Information Technology, Writing about the Environment, Renewable Energy, Multidisciplinary Topics in World Energy, General Ecology, Water & Society.</li>
-                </ul>
-            </div>
 
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Anne Arundel Community College</h3>
-                    <span class="resume-meta">Arnold, MD | May 2025</span>
+                <!-- Education Section -->
+                <div class="resume-block">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Yale University</h3>
+                                <span class="degree">BS in Environmental Studies (Energy & Climate)</span>
+                                <span class="certificate">Certificate in Statistics & Data Science</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">New Haven, CT</span>
+                                <span class="date">Expected December 2027</span>
+                            </div>
+                        </div>
+                        <div class="entry-content">
+                            <p class="coursework"><strong>Relevant Coursework:</strong> Introductory Statistics, CS50x, Computing & Information Technology, Writing about the Environment, Renewable Energy, Multidisciplinary Topics in World Energy, General Ecology, Water & Society</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Anne Arundel Community College</h3>
+                                <span class="degree">AS in General Biology</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">Arnold, MD</span>
+                                <span class="date">May 2025</span>
+                            </div>
+                        </div>
+                        <div class="entry-content">
+                            <ul class="achievements">
+                                <li><strong>Awards:</strong> AACC Impact and Excellence Award, $3,000 Radcliffe Foundation Grant</li>
+                                <li><strong>Publications:</strong> Research article on mycelium-based runoff filtration published in AACC Journal of Emerging Scholarship</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <p><strong>AS in General Biology</strong></p>
-                <ul>
-                    <li>Awards: AACC Impact and Excellence Award, $3,000 Radcliffe Foundation Grant.</li>
-                    <li>Publications: Research article on mycelium-based runoff filtration published in AACC Journal of Emerging Scholarship.</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="resume-block">
-            <h2>PROFESSIONAL & RESEARCH EXPERIENCE</h2>
-            
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Geospatial Research Assistant</h3>
-                    <span class="resume-meta">Yale University, New Haven, CT | February 2026 – Present</span>
+                <!-- Experience Section -->
+                <div class="resume-block">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Geospatial Research Assistant</h3>
+                                <span class="organization">Yale University</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">New Haven, CT</span>
+                                <span class="date">February 2026 – Present</span>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Analyze forest and wildfire capitalization impacts on municipal bond markets through complex data linkage</li>
+                            <li>Merge environmental and financial datasets to assess regional climate risk economic impacts</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Biology Tutor</h3>
+                                <span class="organization">Anne Arundel Community College</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">Arnold, MD</span>
+                                <span class="date">October 2024 – May 2025</span>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Provide tutoring in Botany, Zoology, Cell & Molecular Biology, and Evolution & Ecology</li>
+                            <li>Design simplified study guides and visual diagrams to help students grasp complex biological concepts</li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>Executed complex data linkage to analyze the capitalization of forests and wildfires within the municipal bond market.</li>
-                    <li>Merged disparate environmental and financial datasets to help assess the economic impacts of regional climate risks.</li>
-                </ul>
-            </div>
 
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Biology Tutor</h3>
-                    <span class="resume-meta">Anne Arundel Community College, Arnold, MD | October 2024 – May 2025</span>
+                <!-- Leadership & Entrepreneurship Section -->
+                <div class="resume-block">
+                    <h2 class="section-title">Leadership & Entrepreneurship</h2>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Co-Founder</h3>
+                                <span class="organization">Mycelium Loving</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">Annapolis, MD</span>
+                                <span class="date">April 2024 – August 2025</span>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Co-founded a gourmet mushroom business supplying clean, local food to the community</li>
+                            <li>Awarded $3,000 Radcliffe Foundation grant in AACC's Business Pitch Competition</li>
+                            <li>Designed and built sterile cultivation lab and climate-controlled grow tent</li>
+                            <li>Provided mushrooms and educational workshops to 200+ community members</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>Technology Instructor</h3>
+                                <span class="organization">Centro de Ayuda</span>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">Annapolis, MD</span>
+                                <span class="date">April 2023 – August 2023</span>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Led classes for Spanish-speaking community members on basic technology skills</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-entry">
+                        <div class="entry-header">
+                            <div class="entry-title">
+                                <h3>National Outdoor Leadership School</h3>
+                            </div>
+                            <div class="entry-meta">
+                                <span class="location">Patagonia, Chile</span>
+                                <span class="date">October 2022 – April 2023</span>
+                            </div>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Mountaineering, Sea Kayaking, Rock Climbing, Cultural Immersion, Wilderness First Responder Training</li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li>Tutored students in Botany, Zoology, Cell & Molecular Biology, and Evolution & Ecology.</li>
-                    <li>Designed and produced simplified study guides and visual diagrams to help students grasp complex biological concepts.</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="resume-block">
-            <h2>LEADERSHIP & ENTREPRENEURSHIP</h2>
-            
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Co-Founder, Mycelium Loving</h3>
-                    <span class="resume-meta">Annapolis, MD | April 2024 – August 2025</span>
+                <!-- Skills Section -->
+                <div class="resume-block">
+                    <h2 class="section-title">Skills & Certifications</h2>
+
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Programming & Tech</h4>
+                            <p>R, Python, C, SQL (working); JavaScript/HTML (familiar); Excel, Microsoft/Google suites, Illustrator/Canva</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <p>Spanish (conversational)</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Certifications</h4>
+                            <p>Wilderness First Responder, CPR, Leave No Trace Master Educator</p>
+                        </div>
+                    </div>
                 </div>
-                <ul>
-                    <li>Co-founded a gourmet mushroom business supplying clean, local food to the community.</li>
-                    <li>Awarded a $3,000 Radcliffe Foundation grant in AACC’s Business Pitch Competition.</li>
-                    <li>Designed and built a sterile cultivation lab and climate-controlled grow tent.</li>
-                    <li>Provided mushrooms and educational workshops to 200+ community members.</li>
-                </ul>
+
             </div>
-
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>Technology Instructor, Centro de Ayuda</h3>
-                    <span class="resume-meta">Annapolis, MD | April 2023 – August 2023</span>
-                </div>
-                <ul>
-                    <li>Led classes for Spanish-speaking community members on basic technology skills.</li>
-                </ul>
-            </div>
-            
-            <div class="resume-item">
-                <div class="resume-item-header">
-                    <h3>National Outdoor Leadership School</h3>
-                    <span class="resume-meta">Patagonia, Chile | October 2022 – April 2023</span>
-                </div>
-                <ul>
-                    <li>Sections: Mountaineering, Sea Kayaking, Rock Climbing, Cultural Immersion, Wilderness First Responder Training.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="resume-block">
-            <h2>SKILLS & CERTIFICATIONS</h2>
-            <ul class="skills-list">
-                <li><strong>Programming & Tech:</strong> R, Python, C, SQL (working knowledge); JavaScript/HTML (basic familiarity); Excel, Microsoft/Google suites, Illustrator/Canva.</li>
-                <li><strong>Languages:</strong> Spanish (conversational).</li>
-                <li><strong>Certifications:</strong> Wilderness First Responder, CPR, Leave No Trace Master Educator.</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-        </main>
-
+        </section>
+    </main>
 
     <footer>
         <div class="container">
