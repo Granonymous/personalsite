@@ -22,46 +22,207 @@
 
     <header class="hero">
         <div class="container">
-            <h1>Grady Cole</h1>
-            <p class="subtitle">Exploring the intersection of Energy, Climate, and Data Science.</p>
-            <div class="hero-links">
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                <a href="mailto:hello@example.com">Contact Me</a>
+            <div class="hero-content">
+                <div class="hero-info">
+                    <h1>Grady Cole</h1>
+                    <p class="subtitle">Exploring the intersection of Energy, Climate, and Data Science.</p>
+                    <p class="hero-bio">A data-driven environmentalist who believes in the power of stories—both data-driven narratives and human stories from the trail. When not analyzing climate risks or writing about sustainability, I'm planning my next adventure.</p>
+                    <div class="hero-links">
+                        <a href="https://github.com/Granonymous" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/grady-cole-71b718282/" target="_blank">LinkedIn</a>
+                        <a href="mailto:grady.cole@yale.edu">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/pics/KayakHeadshot.png" alt="Grady Cole portrait">
+                </div>
             </div>
         </div>
     </header>
 
     <main class="container">
+        <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2>Selected Works</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Media Recommendation Platform</h3>
-                    <p>A full-stack web application built with Python and Flask, integrating external APIs to share and curate media.</p>
-                    <div class="tags"><span>Flask</span><span>Python</span><span>API</span></div>
-                    <a href="#" class="project-link">View Project <span>&rarr;</span></a>
+            <h2>Selected Projects & Writing</h2>
+            <div class="projects-grid">
+
+                <!-- Lighthouse Essay -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <span class="thumb-icon">ighthouse</span>
+                        <img src="assets/docs/Lighthouse.pdf" alt="" style="display:none">
+                    </div>
+                    <div class="project-content">
+                        <h3>The Lighthouse Effect</h3>
+                        <p class="project-meta">Essay | Environmental Writing</p>
+                        <p>Exploring the cultural and ecological significance of lighthouses as symbols of guidance in uncertain times.</p>
+                        <div class="project-tags"><span>Writing</span><span>Environment</span></div>
+                        <a href="assets/docs/Lighthouse.pdf" class="project-link" target="_blank">Read Essay <span>&rarr;</span></a>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Geospatial Data Analysis</h3>
-                    <p>Translating complex environmental data into accessible resources and maps for non-expert audiences.</p>
-                    <div class="tags"><span>GIS</span><span>Data Science</span></div>
-                    <a href="#" class="project-link">View Case Study <span>&rarr;</span></a>
+
+                <!-- Unfettered Essay -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <span class="thumb-icon">Unfettered</span>
+                        <img src="assets/docs/Unfettered.pdf" alt="" style="display:none">
+                    </div>
+                    <div class="project-content">
+                        <h3>Unfettered</h3>
+                        <p class="project-meta">Essay | Adventure Writing</p>
+                        <p>A reflection on freedom, constraint, and the open road found through long-distance hiking.</p>
+                        <div class="project-tags"><span>Writing</span><span>Hiking</span></div>
+                        <a href="assets/docs/Unfettered.pdf" class="project-link" target="_blank">Read Essay <span>&rarr;</span></a>
+                    </div>
                 </div>
+
+                <!-- Jeopardy Project -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <span class="thumb-icon">Jeopardy</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Statistical Jeopardy</h3>
+                        <p class="project-meta">Final Project | Statistics 101</p>
+                        <p>A data analysis project applying statistical concepts through a game show format.</p>
+                        <div class="project-tags"><span>Statistics</span><span>Data Analysis</span></div>
+                        <a href="assets/docs/jeopardy.pdf" class="project-link" target="_blank">View Project <span>&rarr;</span></a>
+                    </div>
+                </div>
+
+                <!-- AACC Journal Publication -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <span class="thumb-icon">AACC</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mycelium Filtration Research</h3>
+                        <p class="project-meta">Published Article | AACC Journal of Emerging Scholarship</p>
+                        <p>Research on using mycelium-based systems for stormwater runoff filtration and nutrient removal.</p>
+                        <div class="project-tags"><span>Research</span><span>Ecology</span><span>Sustainability</span></div>
+                        <a href="assets/docs/AACC_JES_v4_PROOF_1_FilteringNitrogen.pdf" class="project-link" target="_blank">Read Article <span>&rarr;</span></a>
+                    </div>
+                </div>
+
+                <!-- CS50 Streamlit Game -->
+                <div class="project-card">
+                    <div class="project-thumb">
+                        <span class="thumb-icon">CS50</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Streamlit Game Project</h3>
+                        <p class="project-meta">Final Project | CS50 Programming with Python</p>
+                        <p>An interactive game built with Python's Streamlit framework, featuring dynamic gameplay and user input handling.</p>
+                        <div class="project-tags"><span>Python</span><span>Streamlit</span><span>Game Dev</span></div>
+                        <a href="https://your-streamlit-app-url.com" class="project-link" target="_blank">Play Game <span>&rarr;</span></a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- Adventures Section -->
         <section id="research" class="section">
-            <h2>Research & Fieldwork</h2>
-            <div class="content-block">
-                <h3>Renewable Energy & Soil Ecology</h3>
-                <p>Investigating the socio-political and ecological impacts of energy infrastructure, with planned field research focusing on soil carbon and local communities.</p>
+            <h2>Adventures & Fieldwork</h2>
+
+            <div class="adventure-slider" data-section="camino">
+                <div class="slider-header">
+                    <h3>The Camino de Santiago</h3>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" aria-label="Previous">&larr;</button>
+                        <span class="slide-indicator">1 / 11</span>
+                        <button class="slider-btn next-btn" aria-label="Next">&rarr;</button>
+                    </div>
+                </div>
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <div class="slide"><img src="assets/pics/camino/5170E195-E16C-492B-B26F-C72E3921EB1A_4_5005_c.jpeg" alt="Camino trail"></div>
+                        <div class="slide"><img src="assets/pics/camino/C41CFBE8-3A78-4D7F-B337-20C9254BB06A.JPG" alt="Camino scenery"></div>
+                        <div class="slide"><img src="assets/pics/camino/A5879D37-71BC-4A1C-9B51-4114C4B71B24_1_102_a.jpeg" alt="Camino landscape"></div>
+                        <div class="slide"><img src="assets/pics/camino/F03D2C1E-57E9-4280-A802-B7CA5BC856BC_4_5005_c.jpeg" alt="Camino path"></div>
+                        <div class="slide"><img src="assets/pics/camino/D2EBCC93-5CB2-4914-ADBE-647167277B08_1_105_c.jpeg" alt="Camino village"></div>
+                        <div class="slide"><img src="assets/pics/camino/2782A1D4-22A0-46C4-AA1A-7D426C6159F1_1_105_c.jpeg" alt="Camino walkway"></div>
+                        <div class="slide"><img src="assets/pics/camino/998998A3-7D8D-4006-B4C1-501346A7A309_1_105_c.jpeg" alt="Camino architecture"></div>
+                        <div class="slide"><img src="assets/pics/camino/3A8D1F54-3EA2-4054-9E39-B8F7CB6012C5_1_105_c.jpeg" alt="Camino nature"></div>
+                        <div class="slide"><img src="assets/pics/camino/27FFAECE-F3B9-46D8-BAA5-912DDAC5A2DA_1_105_c.jpeg" alt="Camino path"></div>
+                        <div class="slide"><img src="assets/pics/camino/592B8C83-CD8A-4AD4-BABB-2126650F3060_1_105_c.jpeg" alt="Camino trail"></div>
+                        <div class="slide"><img src="assets/pics/camino/998998A3-7D8D-4006-B4C1-501346A7A309_1_105_c.jpeg" alt="Camino landscape"></div>
+                    </div>
+                </div>
+                <div class="slider-caption">
+                    <p class="slider-text">Walking 700+ miles across Spain on the Camino de Santiago was a journey of intentional simplicity. The rhythm of daily steps, the camaraderie of fellow pilgrims, and the constant presence of history transformed how I move through the world.</p>
+                </div>
             </div>
+
+            <div class="adventure-slider" data-section="patagonia">
+                <div class="slider-header">
+                    <h3>Patagonia Expedition</h3>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" aria-label="Previous">&larr;</button>
+                        <span class="slide-indicator">1 / 10</span>
+                        <button class="slider-btn next-btn" aria-label="Next">&rarr;</button>
+                    </div>
+                </div>
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <div class="slide"><img src="assets/pics/patagonia/6553FBF7-56FA-4D0C-A031-67DE7D06717A_1_105_c.jpeg" alt="Patagonia mountains"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/C286E319-70EC-4D1A-A420-3055DAD6F06C_1_105_c.jpeg" alt="Patagonia landscape"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/CAA5A7EC-61AB-4881-B0E2-CCCBAC68FB7B_1_105_c.jpeg" alt="Patagonia wilderness"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/9AFC7CD2-1750-47D7-A662-4CD1444339B6_1_105_c.jpeg" alt="Patagonia terrain"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/F7E78C7B-2037-43B7-A739-F7E0B8709C7F_1_105_c.jpeg" alt="Patagonia nature"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/EC762074-615D-4FAD-83A2-143FD2697909_1_105_c.jpeg" alt="Patagonia expedition"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/CBA0CAB7-0195-47CD-9DE5-93E1237953D7_4_5005_c.jpeg" alt="Patagonia adventure"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/6D457BD7-4CC2-48C8-87AE-E6AE4D8B77E6_1_105_c.jpeg" alt="Patagonia landscape"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/B9EF9AE4-46E2-433C-B18B-A931E0B5C3DB_1_105_c.jpeg" alt="Patagonia mountains"></div>
+                        <div class="slide"><img src="assets/pics/patagonia/21A6A8EC-8C7A-402A-806B-75655654DAB9_1_105_c.jpeg" alt="Patagonia wilderness"></div>
+                    </div>
+                </div>
+                <div class="slider-caption">
+                    <p class="slider-text">Spending six months in Patagonia as part of the National Outdoor Leadership School was my most transformative adventure. From scaling ice faces to navigating river crossings, the constant learning happened not just outdoors but in how I relate to challenge itself.</p>
+                </div>
+            </div>
+
+            <div class="adventure-slider" data-section="kayaking">
+                <div class="slider-header">
+                    <h3>Sea Kayaking Adventure</h3>
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" aria-label="Previous">&larr;</button>
+                        <span class="slide-indicator">1 / 9</span>
+                        <button class="slider-btn next-btn" aria-label="Next">&rarr;</button>
+                    </div>
+                </div>
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <div class="slide"><img src="assets/pics/kayaking/077CDABE-81E7-42CC-BEF9-F4DECE295008_4_5005_c.jpeg" alt="Sea kayaking"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/627F5C02-8B1E-40A0-ABDB-136E2C2FE658.JPG" alt="Kayaking water"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/5D0FE014-17FC-4A6A-9D2A-765858356828.JPG" alt="Kayaking sunset"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/A0CEAAAB-B07A-4A44-91C9-3F58929FD7AB_4_5005_c.jpeg" alt="Kayaking expedition"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/A9342695-0C04-4157-8837-3CCF6C4F08EF.JPG" alt="Kayaking adventure"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/0BF494EC-0D8A-49EE-AB3A-2CB91A484D7D.JPG" alt="Kayaking nature"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/734307C0-5574-41E8-A8A2-0F8B8040803D_4_5005_c.jpeg" alt="Kayaking water"></div>
+                        <div class="slide"><img src="assets/pics/kayaking/D76D1B20-CFF9-4E11-9A49-7DFF0F676657.JPG" alt="Kayaking journey"></div>
+                    </div>
+                </div>
+                <div class="slider-caption">
+                    <p class="slider-text">Kayaking through coastal channels and islands provided both physical challenge and profound stillness. Each morning began with mist over water, each evening ended with the rhythm of waves—reminding me that the best insights come when movement becomes meditative.</p>
+                </div>
+            </div>
+
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section">
-            <h2>Beyond the Screen</h2>
-            <p>When I'm not writing code or analyzing environmental data, you can usually find me designing gear, route-setting, or planning my next backpacking trip.</p>
+            <h2>About</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/pics/KayakHeadshot.png" alt="Grady Cole headshot">
+                </div>
+                <div class="about-text">
+                    <p>I'm currently a student at Yale University pursuing a BS in Environmental Studies with a focus on Energy & Climate, complemented by a certificate in Statistics & Data Science. My work bridges the gap between environmental research and data-driven storytelling.</p>
+                    <p>When I'm not working on geospatial analyses or writing about sustainability, you'll find me planning outdoor adventures—whether it's backpacking, kayaking, or preparing for my next expedition. My experiences range from co-founding a mushroom business to participating in the National Outdoor Leadership School's wilderness programs.</p>
+                    <p>What connects all these threads is a commitment to understanding complex systems—whether ecological, social, or technological—and finding ways to communicate their stories effectively.</p>
+                </div>
+            </div>
         </section>
     </main>
 
